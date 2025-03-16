@@ -1,0 +1,9 @@
+/talimhub-admin/node_modules
+/talimhub-main/node_modules
+/talimhub-student/node_modules
+/talimhub-teacher/node_modules
+
+/talimhub-admin/dist
+/talimhub-main/dist
+/talimhub-student/dist
+/talimhub-teacher/dist

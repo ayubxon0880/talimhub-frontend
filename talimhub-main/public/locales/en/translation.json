@@ -1,0 +1,50 @@
+
+{
+  "heading": "Improve your english skills with Talimhub",
+  "subheading": "and also get bonuses, 100.000sum prize money for 1st and the most active speaker",
+  "click": "Sign up",
+  "hero": "We help your english",
+  "subhero": "Answer the questions and check the others' answers",
+  "description": {
+    "line1": "web services",
+    "line2": "web services awailable"
+  },
+  "rating_title": "Raiting",
+  "rating_t_1": "Speakers",
+  "rating_t_2": "Likes",
+  "rating_t_3": "person count",
+  "rating_t_4": "all",
+  "navbar": {
+    "home": "Home",
+    "howworks": "How it works",
+    "contact": "Request demo",
+    "login": "Login"
+  },
+  "feature": {
+    "heading": "AI powered",
+    "cardheading": "Open competition",
+    "cardheading2": "Statistics",
+    "cardheading3": "Experienced teachers",
+    "button": "Learn more"
+  },
+  "contact": {
+    "heading": "Leave your request and we will contact you",
+    "name": "Name",
+    "email": "Email",
+    "number": "Phone",
+    "message": "Message",
+    "button": "Send"
+  },
+  "footer": {
+    "heading": "Start your journey toward English fluency today with tools designed to make learning easy, enjoyable, and effective!",
+    "location": "Street Tinchlik, Kokand city, Fergana Region"
+  },
+  "how": {
+    "heading": "How it works?",
+    "subheading": "We provide you with a place where all students can gather",
+    "first": "Register via bot and login",
+    "two": "Open Menu and tap to Speaking",
+    "three": "Speak part 1,2,3",
+    "four": "Get advice from teachers to your speaking"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "heading": "Real ko'rsatkichlar, brendingiz raqamlarda  ",
+  "subheading": "O'z mijozlaringizni aniqlang va ularni samarali tarzda yo'naltiring",
+  "click": "Ro'yhatdan o'tish",
+  "hero": "Brendingizning sifatli reklama tahlili",
+  "rating_title": "Reyting",
+  "rating_t_1": "joylashuv",
+  "rating_t_2": "mashinalar soni",
+  "rating_t_3": "odamlar soni",
+  "rating_t_4": "barchasi",
+  "subhero": "Brendingiz reklama ko'rsatkichlarini kuzatib boring!",
+  "description": {
+    "line1": "Veb service xizmati",
+    "line2": "Veb service turlari"
+  },
+  "navbar": {
+    "home": "Bosh sahifa",
+    "howworks": "Bu qanday ishlaydi",
+    "contact": "Demo ochish",
+    "login": "Kirish"
+  },
+  "feature": {
+    "heading": "Sun'iy intellekt orqali reklama tahlili",
+    "cardheading": "Real vaqtda video tahlili",
+    "cardheading2": "Ma'lumotlarni tahlil qilib borish",
+    "cardheading3": "Shaxsiy sahifada ma'lumotlarni kuzatish",
+    "button": "Batafsil"
+  },
+  "contact": {
+    "heading": "So'rov qoldiring va biz siz bilan bog'lanamiz",
+    "name": "Ismingiz",
+    "email": "Elektron Pochta",
+    "number": "Telefon raqam",
+    "message": "Xabar",
+    "button": "Yuborish"
+  },
+  "footer": {
+    "heading": "Sifatli reklama tahlilini taqdim etamiz",
+    "location": "Farg'ona viloyati, Qo'qon shahri"
+  },
+  "how": {
+    "heading": "Bu qanday ishlaydi?  ",
+    "subheading": "Biz brendingiz reklamasini sun'iy intellekt yordamida tahlil qilib boramiz  ",
+    "first": "Led ekranda reklama roligi  ",
+    "two": "Video kamera orqali ma'lumot yig'ish  ",
+    "three": "Sun'iy intellekt orqali ko'z qarashlarini aniqlash  ",
+    "four": "Dashboard ma'lumot tahlili  "
+
+  }
+}
