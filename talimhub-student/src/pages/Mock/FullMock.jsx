@@ -65,7 +65,7 @@ const FullMock = () => {
     //     audioTwo:speakingTwoForm.audio,
     //     audioThree:speakingThreeForm.audio
     // }
-      const response = await axios.post(`${API}/speaking/save/full-mock`,formData, {
+      const response = await axios.post(`${API}/mock/save/full-mock`,formData, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
         },
@@ -88,7 +88,10 @@ const FullMock = () => {
       {step === 1 && topicOne && <Mock1 setSpeakingForm={setSpeakingOneForm} topic={topicOne} />}
       {step === 2 && <Mock2 setSpeakingForm={setSpeakingTwoForm} topic={topicTwo} />}
       {step === 3 && <Mock3 setSpeakingForm={setSpeakingThreeForm} topic={topicThree} />}
-      {step === 4 && <><LoadingSpinner /><p>Sabrning tagi sariq oltin, Speakingni saqlash ozgina vaqt olishi mumkin sabr qilishingizni so'raymiz.</p></>}
+      {step === 4 && <><LoadingSpinner />
+      <p>Sabrning tagi sariq oltin, Speakingni saqlash ozgina vaqt olishi mumkin sabr qilishingizni so'raymiz.</p>
+      <button onClick={handleFinalSubmission}>Saqlash</button>
+      </>}
       {step === 5 && <><p>Speaking mufavvaqiyatli saqlandi</p><p><a href="/my-mocks" style={{color:"blue"}} className="text-2xl font-bold mb-4 border-x-2 border-y-2">Mockni ko'rish</a></p></>}
       {step > 5 && <div>Xatolik, sahifani yangilang</div>}
     </div>

@@ -72,8 +72,8 @@ const Mock1 = ({ setSpeakingForm, topic }) => {
       <div className="flex flex-col items-center">
         <p className="text-lg font-semibold">PART ONE</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10'>
-          <img src={isValidURL(topic.image1) ? `${API}/audio/${topic.image1}` : topic.image1} width={300} height={300}/>
-          <img src={isValidURL(topic.image2) ? `${API}/audio/${topic.image2}` : topic.image2} width={300} height={300}/>
+          <img src={isValidURL(topic.image1) ? topic.image1 : topic.image1} width={300} height={300}/>
+          <img src={isValidURL(topic.image2) ? topic.image2 : topic.image2} width={300} height={300}/>
         </div>
         <div className="container">
         <p className="text-lg font-semibold">Mavzu</p> 

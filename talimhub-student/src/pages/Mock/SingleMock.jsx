@@ -48,7 +48,11 @@ const SingleMock = () => {
         >
           <div className="text-gray-700 text-left">
       <a href={`#`} className="text-left font-semibold text-lg mb-2">
-        Part 1, {mock.topic1}
+        Part 1, {mock.topic1.topic.split('|').map((e) => {
+                return(
+                  <p className="text-lg font-semibold">{e}</p> 
+                );
+              })}
       </a>
       </div>
       <div className="text-gray-700 text-left">
@@ -65,7 +69,11 @@ const SingleMock = () => {
 
       <div className="text-gray-700 text-left">
       <a href={`#`} className="text-left font-semibold text-lg mb-2">
-        Part 2, {mock.topic2}
+        Part 2, {mock.topic2.topic.split('|').map((e) => {
+                return(
+                  <p className="text-lg font-semibold">{e}</p> 
+                );
+              })}
       </a>
       </div>
       <div className="text-gray-700 text-left">
@@ -81,7 +89,7 @@ const SingleMock = () => {
       </div>
       <div className="text-gray-700 text-left">
       <a href={`#`} className="text-left font-semibold text-lg mb-2">
-        Part 3, {mock.topic3}
+        Part 3, {mock.topic3.topic}
       </a>
       </div>
       <div className="text-gray-700 text-left">

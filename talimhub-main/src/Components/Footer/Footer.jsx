@@ -40,10 +40,16 @@ const Footer = () => {
               </div>
               {/* social handle */}
               <div className="flex items-center gap-3 mt-6">
-                <a href="https://www.instagram.com/ayubxon.1401/">
+                {/* <a href="https://www.instagram.com/ayubxon.1401/">
                   <FaInstagram className="text-3xl hover:text-primary duration-300" />
-                </a>
+                </a> */}
                 <a href="https://t.me/talimhub">
+                  <FaTelegram className="text-3xl hover:text-primary duration-300" />
+                </a>
+                <a href="https://t.me/programmernt">
+                  <FaTelegram className="text-3xl hover:text-primary duration-300" />
+                </a>
+                <a href="https://t.me/ayubxonobidov">
                   <FaTelegram className="text-3xl hover:text-primary duration-300" />
                 </a>
               </div>

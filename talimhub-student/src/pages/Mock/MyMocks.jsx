@@ -84,8 +84,8 @@ const MocksIWasChecked = () => {
         <p className="text-left font-semibold text-lg mb-2">
           Part 1.
         </p>
-        {
-              topic1.split('|').map((e) => {
+            {
+              mock.topic1.topic.split('|').map((e) => {
                 return(
                   <p className="text-lg font-semibold">{e}</p> 
                 );
@@ -99,7 +99,7 @@ const MocksIWasChecked = () => {
       </div>
       <p className="text-lg font-semibold">Part 2.</p> 
             {
-              topic2.split('|').map((e) => {
+              mock.topic2.topic.split('|').map((e) => {
                 return(
                   <p className="text-lg font-semibold">{e}</p> 
                 );
@@ -109,7 +109,7 @@ const MocksIWasChecked = () => {
           Part 3.
         </p>
         {
-              topic3.split('|').map((e) => {
+              mock.topic3.topic.split('|').map((e) => {
                 return(
                   <p className="text-lg font-semibold">{e}</p> 
                 );

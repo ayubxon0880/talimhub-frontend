@@ -157,11 +157,11 @@ const AudioRecorder = () => {
         </div>
       ) : (
         <div className="flex flex-col items-center">
-          {selectedPart.value == '1' & topic != null &&
+          {selectedPart.value == '1' & topic != null ?
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10'>
             <img src={isValidURL(topic.image1) ? topic.image1 : "test"} width={300} height={300}/>
             <img src={isValidURL(topic.image2) ? topic.image2 : "test"} width={300} height={300}/>
-          </div>
+          </div> : <>2 daqiqa vaqt</>
           }
           
           <div className="container">
