@@ -5,8 +5,8 @@ import TopicForm from './pages/TopicForm';
 import Users from './pages/Users';
 import UserForm from './pages/UserForm';
 
-export const API = "http://localhost:8081/api/v1"
-// export const API = "https://qaxvachi.uz/api/v1"
+// export const API = "http://localhost:8081/api/v1"
+export const API = "https://qaxvachi.uz/api/v1"
 
 export const token = {"Authorization":"Bearer "+localStorage.getItem('token')};
 

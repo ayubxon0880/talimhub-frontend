@@ -8,6 +8,24 @@ const Profile = () => {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({ firstname: "", lastname: "", oldPassword: "", password: "" });
 
+  const [imageUrl, setImageUrl] = useState(null);
+
+    useEffect(() => {
+        const fetchImage = async () => {
+            try {
+                const response = await axios.get(`${API}/audio/image/${user.phone}.jpg`, {
+                    responseType: 'blob', // Important to handle binary image data
+                });
+
+                const imageBlob = response.data;
+                const imageObjectUrl = URL.createObjectURL(imageBlob);
+                setImageUrl(imageObjectUrl);
+            } catch (error) {
+            }
+        };
+        fetchImage();
+    }, [user]);
+
   useEffect(() => {
     const fetchUserData = async () => {
       setLoading(true);
@@ -72,7 +90,7 @@ const Profile = () => {
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div className="mb-4">
               <img
-                src={"https://avatar.iran.liara.run/public"}
+                src={imageUrl}
                 alt="Profile"
                 className="w-24 h-24 rounded-full mx-auto"
               />

@@ -4,10 +4,10 @@ import axios from "axios";
 import { API, LoadingSpinner, token } from "../env";
 
 const Speaking = () => {
-  const [speakings, setSpeakings] = useState([]);
+  const [speakings, setSpeakings] = useState(null);
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(5);
-  const [totalPages, setTotalPages] = useState(1);
+  const [totalPages, setTotalPages] = useState(0);
 
   const fetchSpeakings = async (page, pageSize, sorted) => {
     try {
@@ -20,7 +20,7 @@ const Speaking = () => {
       );
       const data = response.data;
       setSpeakings(data.speakings);
-      setTotalPages(data.totalPages);
+      setTotalPages(data.totalElements);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -42,9 +42,10 @@ const Speaking = () => {
     <div className="text-center mt-5">
       <h1 className="text-2xl font-bold mb-4">Speakings</h1>
 
-{speakings.length === 0 ? (
+{speakings == null ? (
   <LoadingSpinner />
 ) : (
+  speakings.length === 0 ? <h1>Barchasi tekshirib bo'lingan</h1> :
   speakings.map((speaking) => (
     <div
       key={speaking.id}

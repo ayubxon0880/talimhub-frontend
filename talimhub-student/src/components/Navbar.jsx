@@ -37,8 +37,8 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
         { to: '/dashboard', label: 'Bosh sahifa' },
         { to: '/speaking', label: 'Speakings' },
         { to: '/audio-record', label: 'Speaking qilish' },
-        { to: '/full-speaking-mock', label: 'Speaking Mock' },
-        { to: '/my-mocks', label: 'Mocklarim' },
+        // { to: '/full-speaking-mock', label: 'Speaking Mock' },
+        // { to: '/my-mocks', label: 'Mocklarim' },
         { to: '/profile', label: 'Profile' },
         // { to: '/ceo', label: 'CEO' },
       ];

@@ -4,7 +4,7 @@ import axios from "axios";
 import { API, LoadingSpinner, token } from "../env";
 
 const MyFeedbacks = () => {
-  const [grades, setGrades] = useState([]);
+  const [grades, setGrades] = useState(null);
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(5);
   const [totalPages, setTotalPages] = useState(1);
@@ -41,11 +41,10 @@ const MyFeedbacks = () => {
   return (
     <div className="text-center mt-5">
       <h1 className="text-2xl font-bold mb-4">Speakings</h1>
-
-{grades.length === 0 ? (
+{grades == null ? (
   <LoadingSpinner />
 ) : (
-  grades.map((grade) => (
+  grades.length === 0 ? <h1>Malumotlar topilmadi</h1> : grades.map((grade) => (
     <div
       key={grade.id}
       className="w-full md:w-96 lg:w-2/3 xl:w-1/2 mx-auto my-4 border-b rounded border p-4 transition-all hover:shadow-lg"

@@ -8,10 +8,9 @@ import SingleSpeaking from './pages/SingleSpeaking';
 import FullMock from './pages/Mock/FullMock';
 import MyMocks from './pages/Mock/MyMocks';
 import SingleMock from './pages/Mock/SingleMock';
-import Listening from './pages/Listening';
 
-// export const API = "https://qaxvachi.uz/api/v1"
-export const API = "http://localhost:8081/api/v1"
+export const API = "https://qaxvachi.uz/api/v1"
+// export const API = "http://localhost:8081/api/v1"
 
 export const token = {"Authorization":"Bearer "+localStorage.getItem('token')};
 
@@ -34,14 +33,14 @@ export const STUDENT_ROUTERS = [
         path:"/audio-record",
         element:<AudioRecorder/>
     },
-    {
-        path:"/full-speaking-mock",
-        element:<FullMock/>
-    },
-    {
-        path:"/my-mocks",
-        element:<MyMocks/>
-    },
+    // {
+    //     path:"/full-speaking-mock",
+    //     element:<FullMock/>
+    // },
+    // {
+    //     path:"/my-mocks",
+    //     element:<MyMocks/>
+    // },
     {
         path:"/user-speaking/:id",
         element:<MySpeaking/>
@@ -62,8 +61,8 @@ export const STUDENT_ROUTERS = [
         path:"/speaking/:id",
         element:<SingleSpeaking/>
     },
-    {
-        path:"/mock-feedback/:id",
-        element:<SingleMock/>
-    }
+    // {
+    //     path:"/mock-feedback/:id",
+    //     element:<SingleMock/>
+    // }
 ]

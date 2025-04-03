@@ -29,18 +29,18 @@ export const TEACHER_ROUTERS = [
         path:"/speaking",
         element:<Speaking/>
     },
-    {
-        path:"/mocks",
-        element:<Mocks/>
-    },
-    {
-        path:"/checked-mocks",
-        element:<MocksIWasChecked/>
-    },
-    {
-        path:"/mock-feedback/:id",
-        element:<SingleMock/>
-    },
+    // {
+    //     path:"/mocks",
+    //     element:<Mocks/>
+    // },
+    // {
+    //     path:"/checked-mocks",
+    //     element:<MocksIWasChecked/>
+    // },
+    // {
+    //     path:"/mock-feedback/:id",
+    //     element:<SingleMock/>
+    // },
     {
         path:"/profile",
         element:<Profile/>

@@ -37,8 +37,8 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
     ? [
         { to: '/dashboard', label: 'Bosh sahifa' },
         { to: '/speaking', label: 'Speaking' },
-        { to: '/mocks', label: 'Mocklar' },
-        { to: '/checked-mocks', label: 'Mocks I was checked' },
+        // { to: '/mocks', label: 'Mocklar' },
+        // { to: '/checked-mocks', label: 'Mocks I was checked' },
         { to: '/my-feedbacks', label: 'My Feedbacks' },
         { to: '/profile', label: 'Profile' },
       ]

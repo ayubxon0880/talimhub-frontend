@@ -7,8 +7,6 @@ import Footer from './components/Footer';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(localStorage.getItem("token") ? true : false);
-  const a = 0
-  const b = 1
 
   return (
     <Router>
