@@ -9,8 +9,8 @@ import FullMock from './pages/Mock/FullMock';
 import MyMocks from './pages/Mock/MyMocks';
 import SingleMock from './pages/Mock/SingleMock';
 
-export const API = "https://qaxvachi.uz/api/v1"
-// export const API = "http://localhost:8081/api/v1"
+// export const API = "https://qaxvachi.uz/api/v1"
+export const API = "http://localhost:8081/api/v1"
 
 export const token = {"Authorization":"Bearer "+localStorage.getItem('token')};
 
@@ -28,6 +28,7 @@ export const STUDENT_ROUTERS = [
     {
         path:"/speaking",
         element:<Speaking/>
+
     },
     {
         path:"/audio-record",
